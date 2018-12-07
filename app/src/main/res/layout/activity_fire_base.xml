@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xsis.com.sqlitedatabasepractice.FireBaseActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputNameFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Name"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputGenderFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Gender"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputAgeFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Age"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/inputHeightFB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Height"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/saveButtonFB"
+                android:layout_width="100dp"
+                android:text="Save"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/updateButtonFB"
+                android:text="Update"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_margin="10dp"
+            android:id="@+id/recyclerListDataFB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--TextView
+            android:id="@+id/displayNameFB"
+            android:layout_margin="10dp"
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/displayGenderFB"
+            android:layout_margin="10dp"
+            android:text="Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/displayAgeFB"
+            android:layout_margin="10dp"
+            android:text="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/displayHeightFB"
+            android:text="Height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" /-->
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
